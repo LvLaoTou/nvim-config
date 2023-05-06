@@ -27,3 +27,6 @@ require("plugins/comment")
 
 -- 自动补全括号
 require("plugins/autopairs")
+
+-- buffer分割线
+require("plugins/bufferline")

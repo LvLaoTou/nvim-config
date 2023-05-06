@@ -74,6 +74,9 @@ return require('packer').startup(function(use)
   -- 自动补全括号
   use "windwp/nvim-autopairs" 
 
+  -- buffer分割线
+  use "akinsho/bufferline.nvim" 
+
   if packer_bootstrap then
     require('packer').sync()
   end
