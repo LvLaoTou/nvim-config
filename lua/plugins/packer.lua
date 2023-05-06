@@ -77,6 +77,9 @@ return require('packer').startup(function(use)
   -- buffer分割线
   use "akinsho/bufferline.nvim" 
 
+  -- 左则git提示
+  use "lewis6991/gitsigns.nvim" 
+  
   if packer_bootstrap then
     require('packer').sync()
   end

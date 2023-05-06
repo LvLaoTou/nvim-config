@@ -30,3 +30,6 @@ require("plugins/autopairs")
 
 -- buffer分割线
 require("plugins/bufferline")
+
+-- git提示插件
+require("plugins/gitsigns")
