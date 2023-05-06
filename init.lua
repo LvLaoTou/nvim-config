@@ -15,3 +15,9 @@ require("plugins/tree")
 
 -- 语法高亮插件
 require("plugins/treesitter")
+
+-- lsp语法提示插件
+require("plugins/lsp")
+
+-- 自动补全
+require("plugins/cmp")
