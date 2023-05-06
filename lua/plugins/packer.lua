@@ -43,11 +43,13 @@ return require('packer').startup(function(use)
   -- 窗口切换
   use 'christoomey/vim-tmux-navigator'
 
-  -- 语法高亮显示
-  use 'nvim-treesitter/nvim-treesitter'
-
   -- 彩虹括号
-  use 'HiPhish/nvim-ts-rainbow2'
+  use {
+      'HiPhish/nvim-ts-rainbow2',
+      -- 语法高亮,
+      requires = {'nvim-treesitter/nvim-treesitter'}
+
+  }
   
   if packer_bootstrap then
     require('packer').sync()
