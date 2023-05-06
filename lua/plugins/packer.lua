@@ -71,6 +71,9 @@ return require('packer').startup(function(use)
   -- 注释
   use "numToStr/Comment.nvim" 
 
+  -- 自动补全括号
+  use "windwp/nvim-autopairs" 
+
   if packer_bootstrap then
     require('packer').sync()
   end

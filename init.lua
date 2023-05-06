@@ -24,3 +24,6 @@ require("plugins/cmp")
 
 -- 注释插件
 require("plugins/comment")
+
+-- 自动补全括号
+require("plugins/autopairs")
