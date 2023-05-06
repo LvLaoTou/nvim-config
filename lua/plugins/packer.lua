@@ -68,6 +68,9 @@ return require('packer').startup(function(use)
   -- 文件路径
   use "hrsh7th/cmp-path"
 
+  -- 注释
+  use "numToStr/Comment.nvim" 
+
   if packer_bootstrap then
     require('packer').sync()
   end

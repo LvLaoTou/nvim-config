@@ -21,3 +21,6 @@ require("plugins/lsp")
 
 -- 自动补全
 require("plugins/cmp")
+
+-- 注释插件
+require("plugins/comment")
