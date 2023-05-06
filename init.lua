@@ -25,7 +25,7 @@ require("plugins/cmp")
 -- 注释插件
 require("plugins/comment")
 
--- 自动补全括号
+-- 自动补全括号插件
 require("plugins/autopairs")
 
 -- buffer分割线
@@ -33,3 +33,6 @@ require("plugins/bufferline")
 
 -- git提示插件
 require("plugins/gitsigns")
+
+-- 全局搜索插件
+require("plugins/telescope")

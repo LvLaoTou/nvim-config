@@ -80,6 +80,11 @@ return require('packer').startup(function(use)
   -- 左则git提示
   use "lewis6991/gitsigns.nvim" 
   
+  -- 文件检索
+  use {
+    'nvim-telescope/telescope.nvim',  
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
   if packer_bootstrap then
     require('packer').sync()
   end
