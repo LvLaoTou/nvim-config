@@ -19,6 +19,10 @@ keymap.set("n", "<leader>sh", "<C-w>s")
 -- 取消高亮 主键+空格
 keymap.set("n", "<leader> ", ":nohl<CR>")
 
+-- 切换buffer
+keymap.set("n", "<C-L>", ":bnext<CR>")
+keymap.set("n", "<C-H>", ":bprevious<CR>")
+
 -- ---------- 插件 ---------- --
 -- nvim-tree
 -- 显示/隐藏文件目录树 
