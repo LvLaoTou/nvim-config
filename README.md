@@ -67,3 +67,8 @@ npm config set registry https://registry.npmmirror.com
     - markdown
         - 预览  MarkdownPreview
         - 停止预览  MarkdownPreviewStop
+    - 搜索 参考lua/plugin/telescope.lua
+        - 在文件名称中搜索 {主键}+ff
+        - 在文件名称和内容中搜索    {主键}+fg
+        - 在文件名称和帮助手册中搜索    {主键}+fh
+        - 在文件名称和buffer中搜索  {主键}+fb
