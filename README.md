@@ -30,13 +30,14 @@ git clone git@gitee.com:lvlaotou/nvim-config.git ~/.config/nvim/
 2.  安装必要的依赖程序
 ```shell
 # 安装依赖
-yay -S xclip git ttf-hack-nerd gcc ripgrep nodejs
+yay -S wl-clipboard xsel git ttf-hack-nerd gcc ripgrep nodejs
 # 安装npm
 curl -qL https://www.npmjs.com/install.sh | sudo sh
 # 配置npm镜像源
 npm config set registry https://registry.npmmirror.com
 ```
-    - xclip 与系统剪贴板通信程序
+    - wl-clipboard wayland协议下使用粘贴版
+    - xsel 与系统剪贴板通信程序
     - git 版本控制，因为插件都是从github下载
     - ttf-hack-nerd 依赖字体 [字体官网](https://www.nerdfonts.com/)|[AUR](https://archlinux.org/groups/any/nerd-fonts/) (插件：nvim-tree | nvim-web-devicons)
     - gcc 编译器 （插件：treesitter）
