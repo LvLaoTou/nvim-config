@@ -23,11 +23,17 @@ nvim配置，基于lua编写，关于neovim中使用lua介绍[官网](https://ne
     &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;|--- treesitter.lua      语法高亮[官网](https://github.com/nvim-treesitter/nvim-treesitter)  
 |--- plugin  packer插件管理自动生成及管理的目录  
 #### 安装教程
+
 1.  将此仓库clone到~/.config/nvim/下
 ```git
 git clone git@gitee.com:lvlaotou/nvim-config.git ~/.config/nvim/
 ```
 2.  安装必要的依赖程序
+
+> 因为很多插件需要从Github下载，所以网络问题需要自己解决
+
+Arch Linux 安装
+
 ```shell
 # 安装依赖
 yay -S wl-clipboard xsel git ttf-hack-nerd gcc ripgrep nodejs
@@ -35,6 +41,28 @@ yay -S wl-clipboard xsel git ttf-hack-nerd gcc ripgrep nodejs
 curl -qL https://www.npmjs.com/install.sh | sudo sh
 # 配置npm镜像源
 npm config set registry https://registry.npmmirror.com
+```
+
+Windows 安装
+
+```
+下载并安装git（能看到这个文章我相信你已经安装了git）
+https://git-scm.com/download/win
+
+下载并安装npm 
+https://nodejs.cn/download/current/
+
+配置np镜像源
+npm config set registry https://registry.npm.taobao.org
+
+下载并安装ripgrep
+https://github.com/BurntSushi/ripgrep/releases
+
+下载并安装Hack字体
+https://github.com/source-foundry/Hack-windows-installer
+
+下载并安装gcc
+https://github.com/skeeto/w64devkit/
 ```
     - wl-clipboard wayland协议下使用粘贴版
     - xsel 与系统剪贴板通信程序
